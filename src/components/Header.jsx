@@ -5,26 +5,31 @@ const Header = () => {
   return (
    <>   
    <header>
-    <nav>
-        <div className='icons'>
-        <h1>Alfred Plumbing Maintenance And Renovations</h1>
-          <FaInstagram/>
-          <FaWhatsapp />
+   <div className='icons-header'>
+        <h1 className="head">Alfred Plumbing Maintenance And Renovations</h1>
+         <div>
+         <FaInstagram className='icon'/>
+         <FaWhatsapp className='icon' />
+         </div>
         </div>
-        <ul>
-           <li>home</li>
-           <li>services</li>
-           <li>about</li>
-           <li>Projects</li>
-           <li>Contact</li>
+    <nav>
+       <div className='navComponents'>
+       <ul>
+           <li><a href="#">home</a></li>
+           <li><a href="#">services</a></li>
+           <li><a href="#">about</a></li>
+           <li><a href="#">projects</a></li>
+           <li><a href="#">contact</a></li>
         </ul>
-        <div>
-       <FaPhone />
+        <div className='phone-container'>
+       <FaPhone className='FaPhone'/>
        <p className='call-us'>
-       Got a Plumbing Emergency? Call us 24/7:
+       Got a Plumbing Emergency? Call us 24/7: <br />
        <span className="phone">+27 84 051 5349</span>
        </p>
         </div>
+       </div>
+        
     </nav>
    </header>
    </>
