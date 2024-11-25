@@ -84,3 +84,79 @@ justify-content: space-between;
   .phone{
     font-size: 1.7rem;
   }
+  /*-----------------------Home-------------------------- */
+  .main{
+    background: url('./components/images/carousel-1.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+  }
+  .mian-content {
+    width: 70%;
+    margin-top: 9vh;
+    height: fit-content;
+    position: relative; /* Required for pseudo-elements */
+    border-left: 20px solid #fff;
+    border-right: none;
+    padding: 2%;
+    left: -60px;
+  }
+  
+  .mian-content::before,
+  .mian-content::after {
+    content: "";
+    position: absolute;
+    width: 80px; /* Length of the border */
+    height: 20px; /* Thickness of the border */
+    background-color: #fff; /* Color of the border */
+  }
+  
+  .mian-content::before {
+    top: 0; /* Position at the top */
+    left: 0; /* Start at the left edge */
+  }
+  
+  .mian-content::after {
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Start at the left edge */
+  }
+  
+  
+  .initial{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  .initial2{
+    font-size: 67px;
+    font-weight: bolder;
+    color: #fff;
+    line-height: 100px;
+  }
+  .initial3{
+    font-size: 23px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .read-more, .whatsapp{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+    color: #fff;
+    margin-top: 40px;
+    background-color: rgb(22, 88, 210);
+    cursor: pointer;
+    border: none;
+  }
+  .whatsapp{
+    background-color: rgb(69, 168, 69) !important;
+    margin-left: 45px;
+  }
+  .main-buttons{
+    margin-bottom: 70px;
+  }
