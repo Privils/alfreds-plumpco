@@ -83,6 +83,7 @@ justify-content: space-between;
   }
   .phone{
     font-size: 1.7rem;
+    color: red;
   }
   /*-----------------------Home-------------------------- */
   .main{
@@ -200,3 +201,98 @@ justify-content: space-between;
     background-color: #1023cea7;
     cursor: pointer;
   }
+  /* ---------------------about section-------------- */
+  /* need to add the image */
+  .a-bout{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+  }
+.about-us-img-container{
+  width: 600px;
+background-color: orange;
+  }
+  .about-us-img-container img{
+    width: 85%;
+    height: 500px;
+      }
+  .about h4{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 24px;
+    margin-left: 6vw;
+  }
+  .about-text{
+    background-color: orange;
+    width: 600px;
+  }
+  .about-text h1{
+    font-size: 2.9em;
+  }
+  .about-text p{
+    margin-top: 20px;
+    padding: 9px;
+    font-size: 18px;
+  }
+  .about-text ul li{
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin-left: 10px;
+    color: blue;
+  }
+  .inAbout{
+    margin-top: 28px;
+    width: 550px;
+    height: 130px;
+    display: flex;
+    justify-content: left;
+  }
+  /* .call-us-about{
+    font-size: 2rem !important;
+  } */
+   /* services */
+   .services{
+    background-color: #ce10aba7;
+    display: flex;
+    justify-content: space-between;
+   }
+   .years{
+    background-color: blue;
+    width: 800px !important;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    place-content: center;
+  
+   }
+   .years p{
+   /* transform: rotate(90deg); */
+ font-size: 5em;
+ background-color: red;
+   }
+   .services-container h3{
+    color: orangered;
+    font-size: 1.9em;
+   }
+   .Explore-Our-Services{
+font-size: 2em;
+font-weight: 800;
+   }
+   .offer-text{
+    margin-top: 4vh;
+    font-size: 18px;
+   }
+   .cards-container{
+    background-color: brown;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+   .service-cards{
+    margin: 5px;
+    width: 400px;
+    background-color: aliceblue;
+    height: 240px;
+   }
