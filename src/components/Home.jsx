@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWhatsapp, FaArrowRight, FaPhone } from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub} from "react-icons/fa";
 import image from "./images/service-1.jpg";
 import image1 from "./images/service-2.jpg";
 import image2 from "./images/service-3.jpg";
@@ -92,16 +92,16 @@ const Home = () => {
           </div>
           <div className="about-us-img-container">
             <img src={image4} alt="" />
+            <img src={image5} alt="" className="image5"/>
           </div>
         </div>
       </section>
       <section className="services">
 
-        <div className="years">
-          <p>
-            15 years experience
-          </p>
-        </div>
+       
+      <div className="years">
+        15 years experience
+      </div>
 
         <div className="services-container">
           <h3>our services</h3>
@@ -111,7 +111,7 @@ const Home = () => {
           </p>
           <div className="cards-container">
            <div className="service-cards">
-            <span>icon</span>
+            <FaWater className="service-icons"/>
             <h2>
             Drain Repair
             </h2>
@@ -120,7 +120,7 @@ const Home = () => {
             </p>
            </div>
            <div className="service-cards">
-           <span>icon</span>
+           <FaToilet className="service-icons"/>
             <h2>
             Toilet Pipe Repair
             </h2>
@@ -129,7 +129,7 @@ const Home = () => {
             </p>
            </div>
            <div className="service-cards">
-           <span>icon</span>
+           <FaWrench className="service-icons"/>
             <h2>
             Sewer Line Repair
             </h2>
@@ -138,7 +138,7 @@ const Home = () => {
             </p>
            </div>
            <div className="service-cards">
-           <span>icon</span>
+          <FaTemperatureLow className="service-icons"/>
             <h2>
             Water Heater Repair
             </h2>
@@ -147,7 +147,7 @@ const Home = () => {
             </p>
            </div>
            <div className="service-cards">
-           <span>icon</span>
+            <FaHotTub className="service-icons"/>
             <h2>
             Burst Geyser Replacement
             </h2>
@@ -156,7 +156,7 @@ const Home = () => {
             </p>
            </div>
            <div className="service-cards">
-           <span>icon</span>
+           <FaTint className="service-icons"/>
             <h2>
             Emergency Plumbing Services
             </h2>
