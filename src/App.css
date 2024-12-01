@@ -22,10 +22,10 @@ header{
   cursor: pointer;
   }
   .icon:nth-child(1){
-    color: red;
+    color: rgba(240, 13, 43, 0.918);
   }
   .icon:nth-child(2){
-    color: green;
+    color: rgb(7, 192, 7) ;
   }
   nav{
     width: 100%;
@@ -276,7 +276,13 @@ justify-content: space-between;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
 }
-
+.years p{
+  color: white;
+  width: 100%;
+  font-size: 4.5em;
+  transform: rotate(270deg);
+  font-weight: 800;
+}
 
 
    .services-container h3{
@@ -319,3 +325,209 @@ margin-bottom: 50px;
    .service-cards p{
     padding: 12px;
    }
+   /* testimonials */
+   .testimonials{
+    margin-top: 60px;
+    margin-bottom: 40px;
+   }
+   .testimonials-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+   }
+   .testimonials h3{
+    text-align: center;
+    font-size: 2em;
+   }
+   .testimonials h1{
+    text-align: center;
+    font-size: 2.6em;
+    margin: 8px;
+   }
+   .clients{
+    width: 400px;
+    padding: 6px;
+    text-align: center;
+   }
+   .clients p{
+    border: 2px solid;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 3px 3px 5px;
+   } 
+   .clients h5{
+    color: gray;
+    font-size: 25px;
+    font-weight: lighter;
+   } 
+   .stars{
+margin: 9px;
+   }
+
+
+   .contact {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .number-container {
+    width: 100%;
+    max-width: 660px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .number-container h1 {
+    margin-bottom: 10px;
+  }
+  
+  .number-container span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .number-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .number-container a {
+    color: yellow;
+    text-decoration: underline;
+  }
+  
+  .formContainer {
+    max-width: 660px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .formContainer form {
+    background-color: #7883dd;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+ 
+  
+  .name,
+  .email,
+  .subject,
+  #message {
+    width: 100%;
+    font-size: 17px;
+    padding: 12px 15px;
+    margin-bottom: 15px !important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+  .name,
+  .email{
+    width: 40%;
+    height: 64px;
+    margin: 8px;
+  }
+  
+  .subject {
+    font-size: 18px;
+  }
+  
+  #message {
+    font-family: inherit;
+  }
+  
+  .btnContainer {
+    text-align: center;
+  }
+  
+  .btnContainer button {
+    background-color: #1023cea7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .btnContainer button:hover {
+    background-color: navy;
+  }
+  /* footer */
+  .footer {
+    background-color: #1023cea7;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid chartreuse;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin: 8px 0;
+  }
+  .insta, .whatapp{
+border: 1px solid white;
+padding: 8px;
+font-size: 40px;
+border-radius: 50%;
+margin: 10px;
+  }
+  .footer-column a {
+    color: chartreuse;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: yellow;
+  }
+  .copy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17pxye;
+  }
+ 

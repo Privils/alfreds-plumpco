@@ -1,5 +1,6 @@
 import React from "react";
-import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub} from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram} from "react-icons/fa";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import image from "./images/service-1.jpg";
 import image1 from "./images/service-2.jpg";
 import image2 from "./images/service-3.jpg";
@@ -8,6 +9,21 @@ import image4 from './images/about-1.jpg';
 import image5 from './images/about-2.jpg';
 
 const Home = () => {
+  const center = {
+    lat: -33.9249, // Latitude for Cape Town
+    lng: 18.4241, // Longitude
+  };
+  const containerStyle = {
+    width: "100%",
+    height: "400px",
+  };
+  const StarDisplay = ({ count }) => {
+    return (
+      <div className="stars">
+        {"⭐".repeat(count)}
+      </div>
+    );
+  };
   return (
     <>
       <section className="main">
@@ -100,7 +116,7 @@ const Home = () => {
 
        
       <div className="years">
-        15 years experience
+     <p>   15 years experience</p>
       </div>
 
         <div className="services-container">
@@ -167,6 +183,102 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="testimonials">
+      <h3>Testimonial</h3>
+        <h1>Our Clients Say!</h1>
+       <div className="testimonials-container">
+       <div className="clients">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laudantium ipsam corporis, veritatis quos velit nostrum, 
+            praesentium sed voluptatem cupiditate quibusdam commodi non nulla animi eius debitis a perspiciatis quae tempora inventore ad amet neque modi distinctio.
+             Cum, quis delectus! Saepe.</p>
+             <StarDisplay count={5} className="stars"/>
+          <h2>marco mckathlin</h2>
+          <h5>customer</h5>
+        </div>
+       </div>
+      </section>
+
+
+      <section className="contact">
+  <div className="number-container">
+    <h1>Get in Touch</h1>
+    <span>Contact us today</span>
+    <p>
+      Send a message or click <a href="#">here to schedule a free consultation</a>.
+    </p>
+    <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={12}
+      />
+    </LoadScript>
+  </div>
+
+  <div className="formContainer">
+    <form>
+      <input type="text" placeholder="Your Name" className="name" />
+      <input type="email" placeholder="Your Email" className="email" />
+      <input type="text" placeholder="Subject" className="subject" />
+      <textarea
+        name="message"
+        id="message"
+        rows={7}
+        cols={7}
+        placeholder="Your Message"
+      ></textarea>
+      <div className="btnContainer">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+<footer className="footer">
+  <div className="footer-container">
+    <div className="footer-column">
+      <h3>Address</h3>
+      <p><FaMapMarkerAlt/> 73 Upper Queens Road, Walmer Estate, Cape Town</p>
+      <p><FaPhone/>Phone: +27 84 051 5349</p>
+      <p><FaEnvelope/>  Email: alfred@alfredplumbing.co.za</p>
+      <p>
+        <FaWhatsapp className="whatapp"/>
+        <FaInstagram className="insta" />
+      </p>
+    </div>
+
+    <div className="footer-column">
+      <h3>Openings</h3>
+      <p>Monday - Friday: <br />
+      <span>Always Open</span>
+      </p>
+      <p>Saturday - Sunday: <br />
+      <span>
+        Always open</span></p>
+    </div>
+
+    <div className="footer-column">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#"> <FaGreaterThan/>  burst geyser replacement</a></li>
+        <li><a href="#"> <FaGreaterThan/>  drain laying</a></li>
+        <li><a href="#"> <FaGreaterThan/> sewer line</a></li>
+        <li><a href="#"> <FaGreaterThan/>  water heating</a></li>
+        <li><a href="#"> <FaGreaterThan/> brocken pipe</a></li>
+        <li><a href="#"> <FaGreaterThan/> plumbing noise diagnosis & repair</a></li>
+        <li><a href="#"><FaGreaterThan/> emergency services</a></li>
+        <li><a href="#"><FaGreaterThan/> bathroom renovations</a></li>
+        <li><a href="#"><FaGreaterThan/>  maintanance</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+  <div className="copy">
+<p> &copy; Alfred Plumbing, All Rights Reserved.</p>
+<p>Designed By HTML Codex</p>
+  </div>
+</footer>
+
     </>
   );
 };

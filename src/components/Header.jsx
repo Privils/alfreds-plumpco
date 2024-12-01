@@ -9,7 +9,7 @@ const Header = () => {
         <h1 className="head">Alfred Plumbing Maintenance And Renovations</h1>
          <div>
          <FaInstagram className='icon'/>
-         <FaWhatsapp className='icon' />
+         <FaWhatsapp className='icon whats-app' />
          </div>
         </div>
     <nav>
