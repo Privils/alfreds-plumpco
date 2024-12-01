@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/alfreds-plumpco/static/css/main.d7fa533c.css",
+    "main.js": "/alfreds-plumpco/static/js/main.3c8e9fe5.js",
+    "static/media/about-1.jpg": "/alfreds-plumpco/static/media/about-1.ced386788e57faa33ff5.jpg",
+    "static/media/service-2.jpg": "/alfreds-plumpco/static/media/service-2.cd7e154d0ea107435400.jpg",
+    "static/media/service-1.jpg": "/alfreds-plumpco/static/media/service-1.73664ac0227ec5eb504f.jpg",
+    "static/media/service-3.jpg": "/alfreds-plumpco/static/media/service-3.e93abf847238d25b15c6.jpg",
+    "static/media/carousel-1.jpg": "/alfreds-plumpco/static/media/carousel-1.502d6ce421a3534d20d7.jpg",
+    "static/media/about-2.jpg": "/alfreds-plumpco/static/media/about-2.0d92f61cf4fe10bfb202.jpg",
+    "index.html": "/alfreds-plumpco/index.html",
+    "main.d7fa533c.css.map": "/alfreds-plumpco/static/css/main.d7fa533c.css.map",
+    "main.3c8e9fe5.js.map": "/alfreds-plumpco/static/js/main.3c8e9fe5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7fa533c.css",
+    "static/js/main.3c8e9fe5.js"
+  ]
+}
