@@ -8,7 +8,7 @@ header{
 }
 .head{
   font-size: 3rem;
-  color: rgb(7, 7, 132);
+  color: #1E60AA !important;
   padding: 10px;
 }
 .icons-header{
@@ -45,6 +45,8 @@ justify-content: space-between;
     align-items: center;
     margin-top: 15px;
     gap: 40px;
+    margin-left: 30px;
+    
   }
   nav ul li{
     list-style: none;
@@ -53,9 +55,10 @@ justify-content: space-between;
   }
   nav ul li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #17224d;
     width: 0%;
     position: relative;
+    font-weight: 700;
   }
   nav ul li a:hover{
     transition:  ease-in;
@@ -68,7 +71,7 @@ justify-content: space-between;
   .phone-container{
     display: flex;
     justify-content: center;
-    background-color: blue;
+    background-color:#1E60AA;
     align-items: center;
     margin-left: 20px;
     color: #fff;
@@ -173,7 +176,7 @@ justify-content: space-between;
   .cards{
     width: 400px;
     height: fit-content;
-    background-color: #88c3fb70;
+    background-color: #EDF1FC ;
 
   }
   .card-img{
@@ -182,15 +185,16 @@ justify-content: space-between;
   }
   .card-text{
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 800;
     padding: 15px;
     width: 100%;
     display: flex;
     justify-content: inherit;
     align-items: center;
+    color:   #17224d;
   }
   .FaArrowRight{
-    color: white;
+    color: #1E60AA;
     margin-left: 13vh;
     border: 1px solid #fff;
     padding: 6px;
@@ -269,7 +273,7 @@ justify-content: space-between;
     justify-content: space-between;
    }
    .years {
-    background-color: rgb(76, 0, 255);
+    background-color: #1E60AA ;
     width: 1000px;
     margin-right: 5vw;
     display: flex; /* Enables Flexbox */
@@ -308,7 +312,7 @@ margin-bottom: 50px;
    .service-cards{
     margin: 5px;
     width: 450px;
-    background-color: aliceblue;
+    background-color: #EDF1FC ;
     height: 300px;
    }
    .service-icons{
@@ -385,22 +389,29 @@ margin: 9px;
   
   .number-container h1 {
     margin-bottom: 10px;
+    color: orange;
   }
   
   .number-container span {
     display: block;
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
+    color: #17224d;
+    font-size: 2.5em;
+    font-weight: 800;
   }
   
   .number-container p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
   }
   
   .number-container a {
-    color: yellow;
+    color:  #1023cea7;
     text-decoration: underline;
+    margin: 5px;
+    text-decoration: none;
   }
   
   .formContainer {
@@ -413,7 +424,7 @@ margin: 9px;
   }
   
   .formContainer form {
-    background-color: #7883dd;
+    background-color: #EDF1FC;
     width: 90%;
     padding: 20px;
     border-radius: 10px;
@@ -469,7 +480,7 @@ margin: 9px;
   }
   /* footer */
   .footer {
-    background-color: #1023cea7;
+    background-color:  #17224D;
     color: white;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
@@ -491,7 +502,6 @@ margin: 9px;
   .footer-column h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    border-bottom: 2px solid chartreuse;
     display: inline-block;
     padding-bottom: 5px;
   }
@@ -515,19 +525,152 @@ padding: 8px;
 font-size: 40px;
 border-radius: 50%;
 margin: 10px;
+color: #25D366;
+  }
+  .insta{
+    color: #c50000 !important;
   }
   .footer-column a {
-    color: chartreuse;
     text-decoration: none;
     transition: color 0.3s ease;
+    color: #fff;
   }
-  
-  .footer-column a:hover {
-    color: yellow;
-  }
+
   .copy{
     display: flex;
     justify-content: space-between;
-    margin-top: 17pxye;
+    align-items: center !important;
+    margin-top: 17px;
+  }
+ /* -----------------------------projects page --------------------- */
+ .work-container h3, h1{
+  text-align: center;
+  margin: 8px;
+  text-transform: capitalize;
+ }
+ .work-container h1{
+  font-size: 2.6em;
+  font-weight: 800;
+ }
+ .work-type, .before-after{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+ }
+ picture{
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin-bottom: 40px;
+ }
+
+ figure{
+  width: 270px;
+  height: 300px;
+  margin-bottom: 100px;
+ }
+ .work-images{
+  width: 100%;
+  height: 100%;
+ }
+ figcaption{
+  width: inherit;
+  height: 70px;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 700;
+  place-content: center;
+ }
+ figcaption span{
+font-size: 16px;
+font-weight: 400 !important;
+color: gray;
+ }
+
+
+
+
+
+
+
+
+
+
+ /*---------------mobile design------------ */
+ @media (max-width: 1220px) {
+
+  .cards{
+    width: 300px;
+    background-color: #EDF1FC ;
+background-color: orange;
+  }
+  .card-img{
+    width: 100%;
+    height: auto;
+  }
+  .card-text{
+    font-size: 1.4em;
+    padding: 5px;
+  }
+  .FaArrowRight{
+    margin-left: 3vw;
+    padding: 6px;
+    font-size: 1.6rem;
   }
  
+ }
+ @media (max-width: 940px) {
+  .houser{
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  .cards{
+    margin: 10px;
+  }
+  .a-bout{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+.about-us-img-container{
+  margin-top: 35px;
+}
+
+  .about h4{
+    text-align: center;
+  }
+  
+  .image5{
+    width: 300px !important;
+    height: 250px !important;
+    top: -46vh;
+    left: -37px;
+    position: relative;
+  }
+  .years{
+    display: none;
+  }
+  .services{
+    display: flex;
+    justify-content: center;
+   }
+   .services-container{
+    width: 60%;
+   }
+   .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .number-container, .formContainer{
+    margin-left: 50px;
+  }
+ }

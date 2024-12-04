@@ -205,7 +205,7 @@ const Home = () => {
     <h1>Get in Touch</h1>
     <span>Contact us today</span>
     <p>
-      Send a message or click <a href="#">here to schedule a free consultation</a>.
+      Send a message or click <a href="#">here</a>to schedule a free consultation
     </p>
     <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
       <GoogleMap
@@ -234,50 +234,7 @@ const Home = () => {
     </form>
   </div>
 </section>
-<footer className="footer">
-  <div className="footer-container">
-    <div className="footer-column">
-      <h3>Address</h3>
-      <p><FaMapMarkerAlt/> 73 Upper Queens Road, Walmer Estate, Cape Town</p>
-      <p><FaPhone/>Phone: +27 84 051 5349</p>
-      <p><FaEnvelope/>  Email: alfred@alfredplumbing.co.za</p>
-      <p>
-        <FaWhatsapp className="whatapp"/>
-        <FaInstagram className="insta" />
-      </p>
-    </div>
 
-    <div className="footer-column">
-      <h3>Openings</h3>
-      <p>Monday - Friday: <br />
-      <span>Always Open</span>
-      </p>
-      <p>Saturday - Sunday: <br />
-      <span>
-        Always open</span></p>
-    </div>
-
-    <div className="footer-column">
-      <h3>Services</h3>
-      <ul>
-        <li><a href="#"> <FaGreaterThan/>  burst geyser replacement</a></li>
-        <li><a href="#"> <FaGreaterThan/>  drain laying</a></li>
-        <li><a href="#"> <FaGreaterThan/> sewer line</a></li>
-        <li><a href="#"> <FaGreaterThan/>  water heating</a></li>
-        <li><a href="#"> <FaGreaterThan/> brocken pipe</a></li>
-        <li><a href="#"> <FaGreaterThan/> plumbing noise diagnosis & repair</a></li>
-        <li><a href="#"><FaGreaterThan/> emergency services</a></li>
-        <li><a href="#"><FaGreaterThan/> bathroom renovations</a></li>
-        <li><a href="#"><FaGreaterThan/>  maintanance</a></li>
-      </ul>
-    </div>
-  </div>
-  <hr />
-  <div className="copy">
-<p> &copy; Alfred Plumbing, All Rights Reserved.</p>
-<p>Designed By HTML Codex</p>
-  </div>
-</footer>
 
     </>
   );

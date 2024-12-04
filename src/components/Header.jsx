@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Header = () => {
   return (
@@ -15,10 +16,13 @@ const Header = () => {
     <nav>
        <div className='navComponents'>
        <ul>
-           <li><a href="#">home</a></li>
+         <li>
+            <Link to='/'>home</Link>
+         </li>
            <li><a href="#">services</a></li>
            <li><a href="#">about</a></li>
-           <li><a href="#">projects</a></li>
+           <li>
+            <Link to='/projects'>projects</Link></li>
            <li><a href="#">contact</a></li>
         </ul>
         <div className='phone-container'>
