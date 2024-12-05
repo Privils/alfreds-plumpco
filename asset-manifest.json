@@ -1,19 +1,34 @@
 {
   "files": {
-    "main.css": "/alfreds-plumpco/static/css/main.d7fa533c.css",
-    "main.js": "/alfreds-plumpco/static/js/main.3c8e9fe5.js",
+    "main.css": "/alfreds-plumpco/static/css/main.ab67b6b9.css",
+    "main.js": "/alfreds-plumpco/static/js/main.837aab97.js",
+    "static/media/geyser1.jpg": "/alfreds-plumpco/static/media/geyser1.5df8914f7c610f3b5bda.jpg",
+    "static/media/sink1.jpg": "/alfreds-plumpco/static/media/sink1.99e724e64f6197aeb897.jpg",
+    "static/media/bath-reno1.jpg": "/alfreds-plumpco/static/media/bath-reno1.a2002aea8f0252227885.jpg",
+    "static/media/bath-reno2.jpg": "/alfreds-plumpco/static/media/bath-reno2.b906b05b583c4159d403.jpg",
+    "static/media/bath-reno3.jpg": "/alfreds-plumpco/static/media/bath-reno3.1db4eddb4eb6d68a49e4.jpg",
+    "static/media/bath-reno4.jpg": "/alfreds-plumpco/static/media/bath-reno4.852be4ca0e8cb671a72a.jpg",
+    "static/media/toilet1.jpg": "/alfreds-plumpco/static/media/toilet1.7f5fac779f7bafa0e45f.jpg",
+    "static/media/burst-pipe3.jpg": "/alfreds-plumpco/static/media/burst-pipe3.84debd377e74bbc26c55.jpg",
+    "static/media/burst-pipe2.jpg": "/alfreds-plumpco/static/media/burst-pipe2.703e582e2b5b5b969f52.jpg",
     "static/media/about-1.jpg": "/alfreds-plumpco/static/media/about-1.ced386788e57faa33ff5.jpg",
     "static/media/service-2.jpg": "/alfreds-plumpco/static/media/service-2.cd7e154d0ea107435400.jpg",
     "static/media/service-1.jpg": "/alfreds-plumpco/static/media/service-1.73664ac0227ec5eb504f.jpg",
     "static/media/service-3.jpg": "/alfreds-plumpco/static/media/service-3.e93abf847238d25b15c6.jpg",
+    "static/media/clay-pipe1.jpg": "/alfreds-plumpco/static/media/clay-pipe1.2dce6ecc6ecf5d999602.jpg",
+    "static/media/kitchen-before.jpg": "/alfreds-plumpco/static/media/kitchen-before.3c45e64382541f8ac7f8.jpg",
     "static/media/carousel-1.jpg": "/alfreds-plumpco/static/media/carousel-1.502d6ce421a3534d20d7.jpg",
+    "static/media/kitchen-reno (1).jpg": "/alfreds-plumpco/static/media/kitchen-reno (1).193f5ca0676eed4991bc.jpg",
+    "static/media/kitchen-reno3.jpg": "/alfreds-plumpco/static/media/kitchen-reno3.6a59201a620113320324.jpg",
+    "static/media/kitchen-reno2.jpg": "/alfreds-plumpco/static/media/kitchen-reno2.a027d5b850cde9302e37.jpg",
     "static/media/about-2.jpg": "/alfreds-plumpco/static/media/about-2.0d92f61cf4fe10bfb202.jpg",
+    "static/media/bath-reno.jpg": "/alfreds-plumpco/static/media/bath-reno.954b43135f25591ec760.jpg",
     "index.html": "/alfreds-plumpco/index.html",
-    "main.d7fa533c.css.map": "/alfreds-plumpco/static/css/main.d7fa533c.css.map",
-    "main.3c8e9fe5.js.map": "/alfreds-plumpco/static/js/main.3c8e9fe5.js.map"
+    "main.ab67b6b9.css.map": "/alfreds-plumpco/static/css/main.ab67b6b9.css.map",
+    "main.837aab97.js.map": "/alfreds-plumpco/static/js/main.837aab97.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7fa533c.css",
-    "static/js/main.3c8e9fe5.js"
+    "static/css/main.ab67b6b9.css",
+    "static/js/main.837aab97.js"
   ]
 }
