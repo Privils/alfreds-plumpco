@@ -15,6 +15,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
 }
 .icon{
   margin-right: 25px;
@@ -27,57 +28,74 @@ header{
   .icon:nth-child(2){
     color: rgb(7, 192, 7) ;
   }
+
+
   nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* padding:  10px; */
+  }
+  nav ol{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    background-color: rgb(250, 250, 250);
   }
-  .navComponents{
-    width: 1280px;
-    background-color: white;
-display: flex;
-justify-content: space-between;
+nav ol ul{
+  margin-right: 29vw;
+}
+  nav ol ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+
   }
-  nav ul{
-    background: #fff;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    margin-top: 15px;
-    gap: 40px;
-    margin-left: 30px;
-    
-  }
-  nav ul li{
-    list-style: none;
+
+
+  nav ol ul li a{
     text-transform: capitalize;
-    font-size: 20px;
+     text-decoration: none;
+     font-size: 1.5rem;
+     color: #17224D;
   }
-  nav ul li a{
-    text-decoration: none;
-    color: #17224d;
-    width: 0%;
-    position: relative;
-    font-weight: 700;
+
+
+  nav ol ul li a:hover{
+    cursor: pointer;
+    padding: 3px;
+    border-bottom: 3px solid #1E60AA;
+    border-radius: 10px;
   }
-  nav ul li a:hover{
-    transition:  ease-in;
-    width: 50%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 3px solid red;
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
   }
-  .phone-container{
-    display: flex;
-    justify-content: center;
-    background-color:#1E60AA;
-    align-items: center;
-    margin-left: 20px;
-    color: #fff;
-    font-weight: 600;
-    padding: 7px;
+  #check{
+    display: none;
   }
+
+
+
+
+
+
+
+
+
+
+
   .FaPhone{
     transform: rotate(90deg);
     font-size: 2rem;
@@ -88,6 +106,10 @@ justify-content: space-between;
     font-size: 1.7rem;
     color: red;
   }
+
+
+
+
   /*-----------------------Home-------------------------- */
   .main{
     background: url('./components/images/carousel-1.jpg');
@@ -264,9 +286,16 @@ justify-content: space-between;
     left: 16px;
     position: relative;
   }
-  /* .call-us-about{
-    font-size: 2rem !important;
-  } */
+  #phone-container{
+    background-color: #1E60AA;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .marks {
+    color: green;
+  }
+  
    /* services */
    .services{
     display: flex;
@@ -290,7 +319,7 @@ justify-content: space-between;
 
 
    .services-container h3{
-    color: orangered;
+    color: orange;
     font-size: 1.9em;
    }
    .Explore-Our-Services{
@@ -372,7 +401,6 @@ margin: 9px;
 
    .contact {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
@@ -380,7 +408,7 @@ margin: 9px;
   
   .number-container {
     width: 100%;
-    max-width: 660px;
+    /* max-width: 660px; */
     color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 10px;
@@ -670,7 +698,246 @@ background-color: orange;
     padding: 20px;
     gap: 20px;
   }
-  .number-container, .formContainer{
-    margin-left: 50px;
-  }
+
  }
+ /*
+ @media (max-width: 768px) {
+  nav{
+    position: relative;
+  }
+  nav ul {
+position: absolute;
+width: 70%;
+height: fit-content;
+background: #2c3e50;
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+ } */
+ @media (max-width: 768px) {
+  .head {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .icons-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icon {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+
+  .navComponents {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .checkbtn{
+    display: block;
+  }
+
+  nav {
+    position: static;
+    width: 100%;
+    background-color: #17224D;
+  }
+
+  nav ol {
+    display: none;  /* Initially hide menu items */
+    flex-direction: column;
+    gap: 20px;
+    background: #980d0d;
+    padding: 20px;
+    position: relative;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+
+  /* #phone-container {
+    display: none;  
+    flex-direction: column;
+    gap: 20px;
+    background: #980d0d;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  } */
+
+  /* Show the navigation and phone container when menu is open */
+  nav ol ul.active, #phone-container.active {
+    display: flex;
+  }
+
+  .Bars {
+    display: block;
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .services-container{
+    width: 100%;
+  }
+  .cards-container{
+    width: 100%;
+   }
+  .service-cards{
+    margin: 10px;
+    border-radius: 6px;
+   }
+   .service-icons{
+    font-size: 4rem;
+    border: 4px solid #ffffff;
+    margin: 13px;
+    padding: 10px;
+    color: #17224D;
+   }
+
+.a-bout{
+  
+  display: flex;
+  justify-content: center;
+}
+.about-text{
+  width: 100%;
+}
+
+.about-text ul{
+  margin-bottom: 40px;
+  margin: 6px;
+}
+.about-text ul li{
+  margin-top: 10px;
+  font-size: 20px;
+  list-style: none;
+  margin-left: 10px;
+  color: blue;
+}
+.inAbout{
+  width: 100%;
+  height: fit-content;
+}
+.inAbout p{
+  width: 100%;
+  font-size: 18px;
+}
+.inAbout span{
+  font-size: 1.2em;
+}
+
+
+.about-us-img-container{
+  width: 600px;
+  height: fit-content;
+  }
+  .about-us-img-container img:nth-child(1){
+    width:79%;
+     height: 320px;
+     margin-left: 59px;
+     object-fit: cover;
+      }
+      .image5{
+        width: 140px !important;
+        height: 160px !important;
+        top: -31vh;
+        left: 10px;
+        position: relative;
+      }
+
+      .main{
+        width: 100%;
+        height: fit-content; 
+   margin-bottom: 19px;
+      }
+      .mian-content {
+        width: 100%;
+        margin-top: 19px;
+        height: fit-content;
+        position: relative; /* Required for pseudo-elements */
+        border-left: 0px ;
+        border-right: none;
+        padding: 0;
+        left: 0px;
+        margin-left: 15px;
+      }
+      
+      .mian-content::before,
+      .mian-content::after {
+        content: "";
+        position: relative;
+        width: 0px; /* Length of the border */
+        height: 0px; /* Thickness of the border */
+      }
+      
+      .mian-content::before {
+        top: initial; /* Position at the top */
+        left: initial; /* Start at the left edge */
+      }
+      
+      .mian-content::after {
+        bottom: 0; /* Position at the bottom */
+        left: 0; /* Start at the left edge */
+      }
+      .initial{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 0px;
+        width: 65%;
+      }
+      .initial2{
+        width: 65%;
+        font-size: 30px;
+        font-weight: 600 !important;
+        color: #fff;
+        line-height: initial;
+      }
+      .initial3{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        width: 79%;
+        margin-top: 19px;
+      }
+      .read-more, .whatsapp{
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 12px;
+      }
+      .whatsapp{
+        margin-left: 20px;
+      }
+      .main-buttons{
+        margin-bottom: 20px;
+      }
+      .houser{
+        position: relative;
+        height: fit-content;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+  }

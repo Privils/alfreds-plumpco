@@ -17,6 +17,7 @@ const Home = () => {
     width: "100%",
     height: "400px",
   };
+
   const StarDisplay = ({ count }) => {
     return (
       <div className="stars">
@@ -89,16 +90,16 @@ const Home = () => {
             </p>
               <ul>
                 <li>
-                Residential & commercial plumbing
+                <span className="marks">✔</span> Residential & commercial plumbing
                 </li>
                 <li>
-                Quality services at affordable prices
+                <span className="marks">✔</span>Quality services at affordable prices
                 </li>
                 <li>
-                Immediate 24/ 7 emergency services
+                <span className="marks">✔</span> Immediate 24/ 7 emergency services
                 </li>
               </ul>
-              <div className='phone-container inAbout'>
+              <div className='phone-container inAbout' id="phone-container">
        <FaPhone className='FaPhone'/>
        <p className='call-us-about'>
        Got a Plumbing Emergency? Call us 24/7: <br />
