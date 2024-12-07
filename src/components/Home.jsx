@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram} from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram, FaCheck} from "react-icons/fa";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import image from "./images/service-1.jpg";
 import image1 from "./images/service-2.jpg";
@@ -90,13 +90,13 @@ const Home = () => {
             </p>
               <ul>
                 <li>
-                <span className="marks">✔</span> Residential & commercial plumbing
+                <FaCheck className="mark"/> Residential & commercial plumbing
                 </li>
                 <li>
-                <span className="marks">✔</span>Quality services at affordable prices
+                <FaCheck className="mark"/>Quality services at affordable prices
                 </li>
                 <li>
-                <span className="marks">✔</span> Immediate 24/ 7 emergency services
+                <FaCheck className="mark"/>Immediate 24/ 7 emergency services
                 </li>
               </ul>
               <div className='phone-container inAbout' id="phone-container">

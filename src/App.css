@@ -31,26 +31,24 @@ header{
 
 
   nav{
-    width: 100%;
+    margin: auto;
+    width: 80%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: none !important;
     /* padding:  10px; */
   }
-  nav ol{
-    width: 100%;
+  nav ul{
+    width: 50%;
     display: flex;
     justify-content: space-around;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    margin-left: 6vw;
     background-color: rgb(250, 250, 250);
   }
-nav ol ul{
-  margin-right: 29vw;
-}
   nav ol ul li{
     display: inline-block;
     line-height: 80px;
@@ -59,33 +57,21 @@ nav ol ul{
   }
 
 
-  nav ol ul li a{
+  nav ul li a{
     text-transform: capitalize;
      text-decoration: none;
-     font-size: 1.5rem;
-     color: #17224D;
+     font-size: 1.2rem !important;
+     color: #17224D !important;
   }
 
 
-  nav ol ul li a:hover{
+  nav ul li a:hover{
     cursor: pointer;
     padding: 3px;
-    border-bottom: 3px solid #1E60AA;
+    border-bottom: 2px solid #1E60AA;
     border-radius: 10px;
+    position: relative;
   }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-
 
 
 
@@ -292,8 +278,10 @@ nav ol ul{
     align-items: center;
     color: #fff;
   }
-  .marks {
-    color: green;
+  .mark{
+    color: green !important;
+    background: none !important;
+    font-size: 1.7rem !important;
   }
   
    /* services */
@@ -340,7 +328,7 @@ margin-bottom: 50px;
    }
    .service-cards{
     margin: 5px;
-    width: 450px;
+    width: 430px;
     background-color: #EDF1FC ;
     height: 300px;
    }
@@ -737,36 +725,18 @@ transition: all .5s;
     margin-right: 15px;
     font-size: 20px;
   }
-
   .navComponents {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
   }
-  .checkbtn{
-    display: block;
-  }
 
-  nav {
-    position: static;
-    width: 100%;
-    background-color: #17224D;
-  }
-
-  nav ol {
-    display: none;  /* Initially hide menu items */
-    flex-direction: column;
-    gap: 20px;
-    background: #980d0d;
-    padding: 20px;
-    position: relative;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-  }
+ nav{
+  width: 100%;
+ }
+ .navbar-toggler{
+  margin-left: 70vw;
+ }
 
   /* #phone-container {
     display: none;  
@@ -784,9 +754,7 @@ transition: all .5s;
   } */
 
   /* Show the navigation and phone container when menu is open */
-  nav ol ul.active, #phone-container.active {
-    display: flex;
-  }
+ 
 
   .Bars {
     display: block;
@@ -941,3 +909,11 @@ transition: all .5s;
         align-items: center;
       }
   }
+@media (max-width: 500px) {
+  .formContainer form input{
+    width: 100%;
+  }
+  .formContainer {
+    font-size: 16px;
+  }
+}
