@@ -40,7 +40,6 @@ header{
     align-items: center;
     z-index: 100;
     background: none !important;
-    /* padding:  10px; */
   }
   nav ul{
     width: 50%;
@@ -72,16 +71,6 @@ header{
     border-radius: 10px;
     position: relative;
   }
-
-
-
-
-
-
-
-
-
-
   .FaPhone{
     transform: rotate(90deg);
     font-size: 2rem;
@@ -110,7 +99,7 @@ header{
     width: 70%;
     margin-top: 9vh;
     height: fit-content;
-    position: relative; /* Required for pseudo-elements */
+    position: relative;
     border-left: 20px solid #fff;
     border-right: none;
     padding: 2%;
@@ -121,19 +110,19 @@ header{
   .mian-content::after {
     content: "";
     position: absolute;
-    width: 80px; /* Length of the border */
-    height: 20px; /* Thickness of the border */
-    background-color: #fff; /* Color of the border */
+    width: 80px;
+    height: 20px; 
+    background-color: #fff;
   }
   
   .mian-content::before {
-    top: 0; /* Position at the top */
-    left: 0; /* Start at the left edge */
+    top: 0; 
+    left: 0;
   }
   
   .mian-content::after {
-    bottom: 0; /* Position at the bottom */
-    left: 0; /* Start at the left edge */
+    bottom: 0; 
+    left: 0; 
   }
   
   
@@ -178,9 +167,6 @@ header{
     justify-content: space-evenly;
     align-items: center;
   }
-  /* .houser img:hover{
-    cursor: pointer;
-  } */
   .cards{
     width: 400px;
     height: fit-content;
@@ -214,7 +200,6 @@ header{
     cursor: pointer;
   }
   /* ---------------------about section-------------- */
-  /* need to add the image */
   .a-bout{
     display: flex;
     justify-content: center;
@@ -268,7 +253,7 @@ header{
   .image5{
     width: 245px !important;
     height: 250px !important;
-    top: -36vh;
+    top: -34vh;
     left: 16px;
     position: relative;
   }
@@ -293,9 +278,9 @@ header{
     background-color: #1E60AA ;
     width: 1000px;
     margin-right: 5vw;
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 .years p{
   color: white;
@@ -309,6 +294,7 @@ header{
    .services-container h3{
     color: orange;
     font-size: 1.9em;
+    text-transform: capitalize;
    }
    .Explore-Our-Services{
 font-size: 2em;
@@ -396,7 +382,6 @@ margin: 9px;
   
   .number-container {
     width: 100%;
-    /* max-width: 660px; */
     color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 10px;
@@ -621,7 +606,6 @@ color: gray;
   .cards{
     width: 300px;
     background-color: #EDF1FC ;
-background-color: orange;
   }
   .card-img{
     width: 100%;
@@ -688,28 +672,7 @@ background-color: orange;
   }
 
  }
- /*
- @media (max-width: 768px) {
-  nav{
-    position: relative;
-  }
-  nav ul {
-position: absolute;
-width: 70%;
-height: fit-content;
-background: #2c3e50;
-top: 80px;
-left: -100%;
-text-align: center;
-transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
- } */
+
  @media (max-width: 768px) {
   .head {
     font-size: 2rem;
@@ -737,25 +700,6 @@ transition: all .5s;
  .navbar-toggler{
   margin-left: 70vw;
  }
-
-  /* #phone-container {
-    display: none;  
-    flex-direction: column;
-    gap: 20px;
-    background: #980d0d;
-    padding: 20px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-  } */
-
-  /* Show the navigation and phone container when menu is open */
- 
-
   .Bars {
     display: block;
     font-size: 2rem;
@@ -816,20 +760,24 @@ transition: all .5s;
 
 
 .about-us-img-container{
-  width: 600px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
   height: fit-content;
+  margin-bottom: 30px;
   }
   .about-us-img-container img:nth-child(1){
-    width:79%;
-     height: 320px;
-     margin-left: 59px;
+    width: 400px;
+     height: 100%;
+     padding: 10px;
+     margin-left: 39vh;
      object-fit: cover;
       }
       .image5{
-        width: 140px !important;
-        height: 160px !important;
-        top: -31vh;
-        left: 10px;
+        width: 185px !important;
+        height: 200px !important;
+        top: 53vh;
+        left: -431px;
         position: relative;
       }
 
@@ -842,7 +790,7 @@ transition: all .5s;
         width: 100%;
         margin-top: 19px;
         height: fit-content;
-        position: relative; /* Required for pseudo-elements */
+        position: relative; 
         border-left: 0px ;
         border-right: none;
         padding: 0;
@@ -854,18 +802,18 @@ transition: all .5s;
       .mian-content::after {
         content: "";
         position: relative;
-        width: 0px; /* Length of the border */
-        height: 0px; /* Thickness of the border */
+        width: 0px;
+        height: 0px; 
       }
       
       .mian-content::before {
-        top: initial; /* Position at the top */
-        left: initial; /* Start at the left edge */
+        top: initial;
+        left: initial; 
       }
       
       .mian-content::after {
-        bottom: 0; /* Position at the bottom */
-        left: 0; /* Start at the left edge */
+        bottom: 0; 
+        left: 0;
       }
       .initial{
         font-size: 16px;
@@ -916,4 +864,114 @@ transition: all .5s;
   .formContainer {
     font-size: 16px;
   }
+  .service-cards{
+    margin: 5px;
+    width: 100%;
+    background-color: #EDF1FC ;
+    height: 100%;
+   }
+   .formContainer {
+    padding: 5px;
+  }
+  
+  .formContainer form {
+    width: 100%;
+    padding: 10px;
+  
+  }
+ 
+  
+  .name,
+  .email,
+  .subject,
+  #message {
+    width: 100%;
+    font-size: 16px;
+    padding: 9px 12px;
+  }
+  .name,
+  .email{
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+  }
+  
+  .subject {
+    font-size: 18px;
+  }
+  
+  #message {
+    font-family: inherit;
+  }
+  
+  .btnContainer {
+    text-align: center;
+  }
+  
+  .btnContainer button {
+    background-color: #1023cea7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .about-us-img-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 20vh;
+    }
+    .about-us-img-container img:nth-child(1){
+      width: 300px;
+       padding: 10px;
+       margin-left: 39vh;
+       object-fit: cover;
+        }
+        .image5{
+          width: 150px !important;
+          height: 170px !important;
+          top: 40vh;
+          left: -335px;
+          position: relative;
+        }
+        .services-container h3{
+          text-align: center;
+         }
+         .Explore-Our-Services{
+          text-align: center;
+             }
+             .offer-text{
+              padding: 10px;
+              font-size: 16px;
+              text-align: center;
+             }
+}
+@media (max-width: 350px) {
+  .about-us-img-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    height: fit-content;
+    height: 100%;
+    margin-bottom: 30px;
+    }
+    .about-us-img-container img:nth-child(1){
+      width: 280px;
+       margin-left: 30vh;
+       object-fit: cover;
+        }
+        .image5{
+          width: 130px !important;
+          height: 160px !important;
+          top: 37vh;
+          left: -299px;
+          position: relative;
+        }
 }
