@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alfreds-plumpco/static/css/main.2638b9da.css",
-    "main.js": "/alfreds-plumpco/static/js/main.8dc04eed.js",
+    "main.css": "/alfreds-plumpco/static/css/main.0ed82b38.css",
+    "main.js": "/alfreds-plumpco/static/js/main.b39e4de5.js",
     "static/media/geyser1.jpg": "/alfreds-plumpco/static/media/geyser1.5df8914f7c610f3b5bda.jpg",
     "static/media/sink1.jpg": "/alfreds-plumpco/static/media/sink1.99e724e64f6197aeb897.jpg",
     "static/media/bath-reno1.jpg": "/alfreds-plumpco/static/media/bath-reno1.a2002aea8f0252227885.jpg",
@@ -24,11 +24,11 @@
     "static/media/about-2.jpg": "/alfreds-plumpco/static/media/about-2.0d92f61cf4fe10bfb202.jpg",
     "static/media/bath-reno.jpg": "/alfreds-plumpco/static/media/bath-reno.954b43135f25591ec760.jpg",
     "index.html": "/alfreds-plumpco/index.html",
-    "main.2638b9da.css.map": "/alfreds-plumpco/static/css/main.2638b9da.css.map",
-    "main.8dc04eed.js.map": "/alfreds-plumpco/static/js/main.8dc04eed.js.map"
+    "main.0ed82b38.css.map": "/alfreds-plumpco/static/css/main.0ed82b38.css.map",
+    "main.b39e4de5.js.map": "/alfreds-plumpco/static/js/main.b39e4de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2638b9da.css",
-    "static/js/main.8dc04eed.js"
+    "static/css/main.0ed82b38.css",
+    "static/js/main.b39e4de5.js"
   ]
 }
