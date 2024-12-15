@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram} from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <footer className="footer">
   <div className="footer-container">
     <div className="footer-column">

@@ -167,11 +167,18 @@ header{
     width: 400px;
     height: fit-content;
     background-color: #EDF1FC ;
+    overflow: hidden;
+    position: relative;
 
   }
   .card-img{
     width: 400px;
     height: 200px;
+  }
+  .card-img:hover{
+transform: scale(1.1);
+cursor: pointer;
+transition: transform 0.3s ease-in;
   }
   .card-text{
     font-size: 1.4em;
@@ -312,7 +319,7 @@ margin-bottom: 50px;
     margin: 5px;
     width: 430px;
     background-color: #EDF1FC ;
-    height: 300px;
+    height: 350px;
    }
    .service-icons{
     font-size: 4rem;
@@ -322,7 +329,7 @@ margin-bottom: 50px;
     color: blue;
    }
    .service-cards h2{
-    margin-top: 8vh;
+    margin-top: 4vh;
     padding: 12px;
    }
    .service-cards p{
@@ -481,6 +488,16 @@ margin: 9px;
     color: white;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in forwards; 
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
   }
   
   .footer-container {

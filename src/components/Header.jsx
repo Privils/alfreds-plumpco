@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaInstagram, FaWhatsapp, FaPhone, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+   useEffect(() => {
+      AOS.init({ // Animation duration in milliseconds
+        offset: 120,    // Offset for triggering animations
+        once: false,     // Whether animation should happen only once
+      });
+    }, []);
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,7 +50,7 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link to="/" className="nav-link active" aria-current="page">
                 Home

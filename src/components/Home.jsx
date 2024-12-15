@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram, FaCheck} from "react-icons/fa";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import image from "./images/service-1.jpg";
@@ -7,8 +7,16 @@ import image2 from "./images/service-3.jpg";
 import image3 from './images/about-1.jpg';
 import image4 from './images/about-1.jpg';
 import image5 from './images/about-2.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ // Animation duration in milliseconds
+      offset: 120,    // Offset for triggering animations
+      once: false,     // Whether animation should happen only once
+    });
+  }, []);
   const center = {
     lat: -33.9249, // Latitude for Cape Town
     lng: 18.4241, // Longitude
@@ -30,16 +38,18 @@ const Home = () => {
       <section className="main">
         <div className="mian-content">
           <p className="initial">Plumbing & repairing services</p>
-          <p className="initial2">
+         <div data-aos="fade-down" data-aos-duration="1000">
+         <p className="initial2">
             Efficient Residential & Commercial Plumbing Services
           </p>
+         </div>
           <p className="initial3">
             from leaky faucets and clogged drains to complete system overhauls,
             our expert team is here for all your plumbing needs
           </p>
           <div class="main-buttons">
-            <button className="read-more">read more</button>
-            <button className="whatsapp">
+            <button className="read-more"  data-aos="fade-right"  data-aos-duration="1000">read more</button>
+            <button className="whatsapp" data-aos="fade-left"  data-aos-duration="1000">
               <FaWhatsapp />
               whatsapp now
             </button>
@@ -48,7 +58,7 @@ const Home = () => {
       </section>
       <section className="service">
         <div className="houser">
-          <div className="cards">
+          <div className="cards" data-aos="fade-up" data-aos-duration="500">
             <img src={image} alt="" className="card-img" />
             <div className="card-text">
               <span>
@@ -56,7 +66,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="cards">
+          <div className="cards" data-aos="fade-up" data-aos-duration="800">
             <img src={image1} alt="" className="card-img" />
             <div className="card-text">
               <span>
@@ -64,7 +74,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="cards">
+          <div className="cards" data-aos="fade-up" data-aos-duration="1200">
             <img src={image2} alt="" className="card-img" />
             <div className="card-text">
               <span>
@@ -78,7 +88,7 @@ const Home = () => {
       <section className="about">
         <h4>about us</h4>
         <div className="a-bout">
-          <div className="about-text">
+          <div className="about-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>We Are A Trusted Plumbing Company</h1>
             <p>
               Need a reliable plumber in Cape Town? Look no further than Alfred
@@ -107,7 +117,7 @@ const Home = () => {
        </p>
         </div>
           </div>
-          <div className="about-us-img-container">
+          <div className="about-us-img-container" data-aos="fade-up" data-aos-duration="1000">
             <img src={image4} alt="" />
             <img src={image5} alt="" className="image5"/>
           </div>
@@ -122,10 +132,12 @@ const Home = () => {
 
         <div className="services-container">
           <h3>our services</h3>
-          <p className="Explore-Our-Services">Explore Our Services</p>
+        <div data-aos="fade-up" data-aos-duration="1000">
+        <p className="Explore-Our-Services">Explore Our Services</p>
           <p className="offer-text">
           We offer a wide range of plumbing services to meet your needs, all with no <span className="callout-fee">callout fee</span>
           </p>
+        </div>
           <div className="cards-container">
            <div className="service-cards">
             <FaWater className="service-icons"/>
@@ -185,9 +197,11 @@ const Home = () => {
         </div>
       </section>
       <section className="testimonials">
-      <h3>Testimonial</h3>
-        <h1>Our Clients Say!</h1>
-       <div className="testimonials-container">
+    <div  data-aos="fade-up" data-aos-duration="700">
+    <h3>Testimonial</h3>
+    <h1>Our Clients Say!</h1>
+    </div>
+       <div className="testimonials-container"  data-aos="fade-up" data-aos-duration="1000">
        <div className="clients">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Laudantium ipsam corporis, veritatis quos velit nostrum, 
@@ -202,7 +216,7 @@ const Home = () => {
 
 
       <section className="contact">
-  <div className="number-container">
+  <div className="number-container"  data-aos="fade-up" data-aos-duration="1000">
     <h1>Get in Touch</h1>
     <span>Contact us today</span>
     <p>
@@ -217,7 +231,7 @@ const Home = () => {
     </LoadScript>
   </div>
 
-  <div className="formContainer">
+  <div className="formContainer"  data-aos="fade-up" data-aos-duration="1000">
     <form>
       <input type="text" placeholder="Your Name" className="name" />
       <input type="email" placeholder="Your Email" className="email" />
