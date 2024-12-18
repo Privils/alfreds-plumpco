@@ -784,6 +784,9 @@ color: gray;
      height: 100%;
      padding: 10px;
      margin-left: 39vh;
+    position: absolute;
+    left:39vh;
+    top:50px;
      object-fit: cover;
       }
       .image5{
