@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram, FaCheck} from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaPhone, FaWater, FaToilet, FaWrench, FaTemperatureLow, FaTint, FaHotTub, FaEnvelope, FaMapMarkerAlt, FaGreaterThan, FaInstagram, FaCheck, FaUpload} from "react-icons/fa";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import image from "./images/service-1.jpg";
 import image1 from "./images/service-2.jpg";
@@ -11,6 +11,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  }
   useEffect(() => {
     AOS.init({ // Animation duration in milliseconds
       offset: 120,    // Offset for triggering animations
@@ -36,6 +42,7 @@ const Home = () => {
   return (
     <>
       <section className="main">
+      < FaUpload id="float" onClick={scrollToTop}/>
         <div className="mian-content">
           <p className="initial">Plumbing & repairing services</p>
          <div data-aos="fade-down" data-aos-duration="1000">

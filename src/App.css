@@ -80,7 +80,6 @@ header{
 
 
 
-
   /*-----------------------Home-------------------------- */
   .main{
     background: url('./components/images/carousel-1.jpg');
@@ -563,7 +562,7 @@ color: #25D366;
   text-transform: capitalize;
  }
  .work-container h1{
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-weight: 800;
  }
  .work-type, .before-after{
@@ -577,14 +576,16 @@ color: #25D366;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 40px;
+  position: relative;
+  height: fit-content !important;
  }
 
  figure{
   width: 270px;
   height: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
  }
  .work-images{
   width: 100%;
@@ -592,22 +593,39 @@ color: #25D366;
  }
  figcaption{
   width: inherit;
-  height: 70px;
+  height: 77px;
   text-transform: capitalize;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   place-content: center;
+  padding: 5px;
+  background-color: gainsboro;
  }
  figcaption span{
 font-size: 16px;
 font-weight: 400 !important;
 color: gray;
  }
+ #float {
+  position: fixed;
+  right: 20px; 
+  bottom: 20px; 
+  font-size: 44px; 
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-
-
-
-
+#float:hover {
+  background-color: #0056b3; 
+}
+.Priv{
+  text-decoration: underline;
+}
 
 
 
@@ -774,20 +792,18 @@ color: gray;
 
 .about-us-img-container{
   width: 100%;
-  display: inline-flex;
-  justify-content: center;
+  display: inline-flex !important;
+  justify-content: center !important;
   height: fit-content;
   margin-bottom: 30px;
+  padding-left: 98px;
   }
   .about-us-img-container img:nth-child(1){
     width: 400px;
      height: 100%;
-     padding: 10px;
-     margin-left: 39vh;
-    position: absolute;
-    left:39vh;
-    top:50px;
-     object-fit: cover;
+     padding: 10px; 
+    position: relative;
+    object-fit: cover;
       }
       .image5{
         width: 185px !important;
@@ -872,6 +888,22 @@ color: gray;
         justify-content: space-evenly;
         align-items: center;
       }
+      picture{
+        width: 84%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 40px;
+        position: relative;
+        height: fit-content !important;
+       }
+       figure{
+        width: 300px;
+       }
+       figcaption{
+        height: 90px;
+       }
   }
 @media (max-width: 500px) {
   .formContainer form input{
@@ -939,10 +971,11 @@ color: gray;
 @media (max-width: 490px) {
   .about-us-img-container{
     width: 100%;
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: center;
-    height: fit-content;
+    height: fit-content; */
     margin-bottom: 20vh;
+    padding-left: 0;
     }
     .about-us-img-container img:nth-child(1){
       width: 300px;

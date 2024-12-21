@@ -49,7 +49,7 @@ const Footer = () => {
   <hr />
   <div className="copy">
 <p> &copy; Alfred Plumbing, All Rights Reserved.</p>
-<p>Designed By HTML Codex</p>
+<p>Developed and designed by <span className='Priv'> PrivilsWebDev</span></p>
   </div>
 </footer>
     </div>
